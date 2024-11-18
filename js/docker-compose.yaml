@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: '7777' # Define a senha do usuário root
+      MYSQL_DATABASE: 'GerenciamentoTarefas'             # O nome do banco de dados
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Tarefas</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciamento de Tarefas</h1>
+    <nav>
+      <a href="/index.html">Cadastro de Usuários</a>
+      <a href="#">Cadastro de Tarefas</a>
+      <a href="GerenciarTarefas.html">Gerenciar Tarefas</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cadastro de Tarefas</h2>
+    <form id="formCadastroTarefas">
+      <label for="descricao">Descrição:</label>
+      <input type="text" id="descricao" name="descricao" required>
+
+      <label for="setor">Setor:</label>
+      <input type="text" id="setor" name="setor" required>
+
+      <label for="usuario">Usuário:</label>
+      <select id="usuario" name="usuario" required>
+        <!-- Opções de usuários serão preenchidas dinamicamente pelo JavaScript -->
+      </select>
+
+      <label for="prioridade">Prioridade:</label>
+      <select id="prioridade" name="prioridade" required>
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+      <p id="mensagem"></p>
+    </form>
+  </main>
+
+  <script src="/js/cadastroTarefas.js"></script>
+</body>
+</html>
